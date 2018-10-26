@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/pt"
+            android:padding="10dp"
+            android:onClick="onClick"
+            >
+            <ImageView
+                android:id="@+id/ptimg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/img_click"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"
+                android:layout_marginBottom="3dp"/>
+            <TextView android:id="@+id/ptname"
+                android:text="图片"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="15sp"
+                android:textColor="#303030"
+                android:layout_weight="1"/>
+            <TextView android:id="@+id/ptnum"
+                android:text="(0)"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/ms"
+            android:padding="10dp"
+            android:onClick="onClick"
+            >
+            <ImageView
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="0dp"
+                android:src="@drawable/ad_click"
+                android:layout_marginBottom="3dp"
+                />
+
+            <TextView android:id="@+id/msname"
+                android:text="音频"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:textColor="#303030"
+                android:layout_weight="1"/>
+            <TextView android:id="@+id/msnum"
+                android:text="(0)"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/vd"
+            android:padding="10dp"
+            android:onClick="onClick"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/vd_click"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"
+                android:layout_marginBottom="3dp"/>
+            <TextView android:id="@+id/vdname"
+                android:text="视频"
+
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:textColor="#303030"
+                android:layout_weight="1"/>
+            <TextView android:id="@+id/vdnum"
+                android:text="(0)"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/txt"
+            android:onClick="onClick"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/doc_click"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"/>
+            <TextView android:id="@+id/txtname"
+                android:text="文档"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:textColor="#303030"
+                android:layout_weight="1"/>
+            <TextView android:id="@+id/txtnum"
+                android:text="(0)"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/zip"
+            android:onClick="onClick"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/zip_click"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"/>
+            <TextView android:id="@+id/zipname"
+                android:text="压缩包"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:textColor="#303030"
+                android:layout_weight="1"/>
+            <TextView android:id="@+id/zipnum"
+                android:text="(0)"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/apks"
+            android:onClick="onClick"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/app_click"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"/>
+            <TextView android:id="@+id/appname"
+                android:text="应用"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="16sp"
+                android:textColor="#303030"
+                android:layout_weight="1"/>
+            <TextView android:id="@+id/appnum"
+                android:text="(0)"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
